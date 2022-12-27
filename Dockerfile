@@ -1,2 +1,2 @@
 From tomcat:8.0.20-jre8
-copy target/java-web-app*.war /usr/local/tomcat/webapps/java-web-app.war
+copy target/ci-cd*.war /usr/local/tomcat/webapps/ci-cd.war
