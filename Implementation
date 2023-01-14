@@ -1,0 +1,18 @@
+Creating a ec2 instance of redhat linux
+After the installation of java and jenkins
+
+-launch the jenkins with the public ip of the instance and port and signup and install the by default plugins .
+-In the dashboard choose ->new item -> give name of it->choose freestyle project
+Inside freestyle project- Configure-> source code management->git->repository url-(img1)-> saved ->build now
+build successful
+All this was for checking the jenkins is pulling the code or not.
+
+For Actual Implementation-
+Before creation of new item install the maven integration plugin-
+Dashboard->manage jenkins->available plugins-> maven integration->install and restart
+Again Dashboard->manage jenkins->Global Tool Configuration-> Maven Installations-> add maven->give name and Version-> Save
+In the dashboard choose ->new item -> give name of it->maven project
+Inside maven project-
+Configure->Source Code Mangement->git->repository url->Pre steps-> maven by choosing what we added before->Goals->clean->
+save
+Build Now
